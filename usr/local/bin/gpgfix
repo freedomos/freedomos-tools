@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #tool to fix pgp and pacman-key errors
 
-sudo rm /var/lib/pacman/sync/*
-sudo rm -rf /etc/pacman.d/gnupg/*
+
+sudo rm -rf /etc/pacman.d/gnupg/
 sudo pacman-key --init
 sudo pacman-key --populate
 sudo pacman -Sy
